@@ -63,12 +63,12 @@
 
 //================= Klappt ==================
 
-let x = 2;
-while (x !== 21) {
-  if (x % 2 == 0)
-    console.log(x);
-  x++;
-}
+// let x = 2;
+// while (x !== 21) {
+//   if (x % 2 == 0)
+//     console.log(x);
+//   x++;
+// }
 
 // ==========================================
 
@@ -90,5 +90,9 @@ let words = ['hallo', 'Auto', 'Waschmaschine', 'Schrank', 'Katze', 'Beispiel', '
 let input = document.getElementById('input');
 
 function wordPrint() {
-    console.log(words);
+    for (i = 0; i < words.length; i++) {
+        if (input.value == words[i].length) {
+            console.log(words[i]);
+        }
+    }   
 }
